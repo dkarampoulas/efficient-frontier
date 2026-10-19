@@ -6,10 +6,7 @@ from scipy.optimize import minimize
 # 98 years of real annual returns (Example structure)
 # Columns: Stocks, Bonds, Gold
 # ==========================================
-# Σημείωση: Αν έχεις το αρχείο returns.csv, ξεσχολίασε την από κάτω γραμμή:
-# R = np.loadtxt('returns.csv', delimiter=',', skiprows=1)
 
-# Εναλλακτικά, δημιουργούμε ενδεικτικά δεδομένα για να τρέχει κατευθείαν:
 np.random.seed(42)
 R = np.random.randn(98, 3) * 0.1 + np.array([0.119, 0.048, 0.074])
 
